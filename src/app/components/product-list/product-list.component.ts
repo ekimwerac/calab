@@ -10,7 +10,11 @@ import { Product } from '../../models/products';
 })
 export class ProductListComponent {
   cart: Product[] = [];
-  product = new Product('Product A',  10.99);
+  products: Product[] = [
+    new Product('Product A',  10.99), 
+    new Product('Product B',  7.59), 
+    new Product('Product C',  3.20)
+];
   addToCart(product: Product) {
     this.cart.push(product);
   }
