@@ -1,10 +1,11 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Product } from '../../models/products';
 import { CurrencyPipe } from '@angular/common';​
+import { TruncatePipe } from '../../pipes/truncate.pipe';
 
 @Component({
   selector: 'app-product',
-  imports: [CurrencyPipe],
+  imports: [CurrencyPipe, TruncatePipe],
   templateUrl: './product.component.html',
   styleUrl: './product.component.css'
 })

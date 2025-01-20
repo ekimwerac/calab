@@ -20,3 +20,8 @@
 .button-add-to-cart:hover {
     background-color: #45a049;
 }
+
+.product-description {
+    font-size: 16px;
+    color: #666;
+}
