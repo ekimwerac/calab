@@ -2,6 +2,6 @@
     <h2>{{ product.name }}</h2>
     <p>Price: {{ product.price }}</p>
     <p>Price: {{ product.price | currency: "GBP"}}</p>
-    <p class="product-description">{{ product.description | truncate}}</p>
+    <p class="product-description" [appTooltip]="product.description">{{ product.description | truncate}}</p>
     <button class="button-add-to-cart" (click)="onAddToCartClicked()">Add to Cart</button>
 </div>
